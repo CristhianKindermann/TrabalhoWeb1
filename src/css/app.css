@@ -1,0 +1,67 @@
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#app main {
+  margin-left: 60px;
+}
+@media (max-width: 1000px) {
+  #app {
+    flex-direction: column;
+  }
+  #app main {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  #app aside {
+    width: 100%;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+  margin: 0 0 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.modal-buttons button {
+  margin-left: 10px;
+  background-color: blue;
+  color: antiquewhite;
+  border-radius: 2px;
+  width: 80px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.modal-buttons #cancel {
+background-color: darkred;
+}
